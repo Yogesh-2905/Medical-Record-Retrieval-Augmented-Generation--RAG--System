@@ -1,0 +1,40 @@
+question_id,page_number,relevance_grade,evidence_note
+Q001,1,3,EMS report directly records the incident date and time.
+Q002,1,3,EMS report documents immediate symptoms.
+Q002,3,2,Emergency physician note describes the symptoms in more detail.
+Q003,3,3,Emergency physician note lists the diagnoses.
+Q003,5,2,Discharge summary repeats the discharge diagnoses.
+Q004,4,3,Cervical CT report contains the findings and impression.
+Q005,4,3,Lumbar radiograph report contains the findings and impression.
+Q006,8,3,Lumbar MRI directly describes the right paracentral protrusion.
+Q007,8,3,Lumbar MRI identifies the traversing right L5 nerve root.
+Q008,6,3,"Primary care note records strength, sensation and reflex findings."
+Q009,7,3,Initial physical therapy evaluation records ODI of 48%.
+Q010,11,3,Procedure note records the injection date and procedure.
+Q011,11,3,Procedure note records pre- and post-procedure pain scores.
+Q012,6,3,Primary care note describes the patient's rash after taking codeine.
+Q012,2,2,ED triage record documents codeine allergy with rash.
+Q012,5,1,Discharge record shows the codeine-containing prescription.
+Q013,6,3,Primary care plan initiates gabapentin 300 mg at bedtime.
+Q013,19,1,Pharmacy history provides later dispensing context.
+Q014,10,3,Signed progress note records persistent right leg pain and unchanged deficit.
+Q014,12,3,Unsigned draft records improved symptoms and examination findings.
+Q015,13,3,Transcription contains the partially illegible injection response statement.
+Q016,14,3,EMG/NCS impression identifies chronic left L5 radiculopathy.
+Q017,15,3,Operative report records the procedure and date.
+Q018,17,3,November 5 postoperative visit records recovery findings.
+Q019,18,3,Historical urgent care record documents the 2019 episode.
+Q020,6,3,Primary care note records the patient's reported 2021 collision.
+Q021,19,3,Pharmacy dispensing history lists medications dispensed on September 10.
+Q022,21,3,Employer record contains the work-status chronology.
+Q022,17,2,Postoperative note records release to modified duty.
+Q022,5,1,ED discharge record gives the initial work restriction.
+Q023,20,3,Billing summary directly lists total charges.
+Q024,22,3,Records custodian lists all four requested but unproduced items.
+Q025,22,3,Custodian confirms the cervical MRI report was not produced.
+Q025,9,1,Orthopedic consultation gives only a brief reference to the MRI.
+Q026,22,3,Custodian confirms the clinical documentation was not located.
+Q026,20,1,"Billing summary records a June 11 injection charge, not clinical details."
+Q027,22,3,Custodian confirms PT notes for visits 15 through 22 were not produced.
+Q028,13,3,Transcription explicitly marks portions of the note as illegible.
+Q028,22,2,Custodian confirms that a legible duplicate was not produced.

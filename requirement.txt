@@ -1,0 +1,9 @@
+# Direct third-party dependencies imported by this project
+chromadb
+fastembed
+numpy
+openai
+python-dotenv
+pymupdf
+streamlit
+tokenizers

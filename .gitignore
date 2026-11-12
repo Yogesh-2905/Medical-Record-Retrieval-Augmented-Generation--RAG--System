@@ -1,0 +1,17 @@
+# Environment variables and secrets
+.env
+.env.*
+
+# Allow example configuration
+!.env.example
+
+# Python environment
+.venv/
+__pycache__/
+*.py[cod]
+
+# IDE
+.vscode/
+*.bin
+*.npy
+*.json
