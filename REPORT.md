@@ -211,13 +211,13 @@ The reranker experiment compared the retrieval pipeline with reranking
 disabled and enabled, using the selected chunking configuration and
 Top-K setting.
 
-  Metric          Reranker OFF       Reranker ON
-  -----------     --------------     -------------
-  Hit Rate             1.000           1.000
-  Precision            0.167           0.167
-  Recall               1.000           1.000
-  MRR                **0.810**         0.743
-  nDCG               **0.834**         0.783
+ | Metric    | Reranker OFF | Reranker ON |
+|-----------|-------------:|------------:|
+| Hit Rate  | 1.000        | 1.000       |
+| Precision | 0.167        | 0.167       |
+| Recall    | 1.000        | 1.000       |
+| MRR       | **0.810**    | 0.743       |
+| nDCG      | **0.834**    | 0.783       |
 
 **Selected configuration: reranking OFF.**
 
@@ -245,21 +245,13 @@ runtime configuration.
 After selecting the chunking, embedding and retrieval settings, the
 final selected chunk embeddings and associated metadata are stored in a
 persistent ChromaDB collection.
-
-  -----------------------------------------------------------------------
-  Setting                             Value
-  -----------------------------------------------------------------------
-  Vector database                     ChromaDB
-
-  Persistence location                `data/chroma_db`
-
-  Collection                          `medical_records`
-
-  Distance space                      Cosine
-
-  Stored information                  Chunk text, embeddings, identifiers
-                                      and metadata
-  -----------------------------------------------------------------------
+| Setting                | Value                                      |
+|------------------------|--------------------------------------------|
+| Vector database        | ChromaDB                                   |
+| Persistence location   | `data/chroma_db`                           |
+| Collection             | `medical_records`                          |
+| Distance space         | Cosine                                     |
+| Stored information     | Chunk text, embeddings, identifiers, and metadata |
 
 Metadata such as document ID, page number and section information
 supports source traceability and citation generation.
@@ -331,11 +323,11 @@ will always be correct.
 Answer evaluation used a separate set of **28 questions**, distinct from
 the 24 retrieval evaluation questions.
 
-  Question category          Count
-  ------------------------ -------
-  Answerable questions          24
-  Unanswerable questions         4
-  Total                         28
+| Question Category       | Count |
+|-------------------------|------:|
+| Answerable questions    | 24    |
+| Unanswerable questions  | 4     |
+| **Total**               | **28** |
 
 The evaluation involved running the questions through the RAG pipeline
 and reviewing the generated responses. Unanswerable questions were
@@ -345,13 +337,13 @@ sufficient evidence.
 
 ### Execution and latency summary
 
-  Measurement                        Result
-  -------------------------- --------------
-  Total questions executed               28
-  Successful executions                  28
-  Average latency              4.40 seconds
-  Minimum latency              3.07 seconds
-  Maximum latency              7.74 seconds
+| Measurement             | Result        |
+|-------------------------|---------------|
+| Total questions executed | 28            |
+| Successful executions    | 28            |
+| Average latency          | 4.40 seconds  |
+| Minimum latency          | 3.07 seconds  |
+| Maximum latency          | 7.74 seconds  |
 
 Successful execution means the pipeline completed for the questions; it
 does not by itself mean every answer was factually correct. Answer
@@ -360,13 +352,13 @@ answer-review results.
 
 ## 8. Storage and Performance Evaluation
 
-  Measurement                     Result
-  ----------------------- --------------
-  ChromaDB storage              17.53 MB
-  Total data storage            19.45 MB
-  Average query latency     4.40 seconds
-  Minimum query latency     3.07 seconds
-  Maximum query latency     7.74 seconds
+| Measurement             | Result       |
+|-------------------------|--------------|
+| ChromaDB storage        | 17.53 MB     |
+| Total data storage      | 19.45 MB     |
+| Average query latency   | 4.40 seconds |
+| Minimum query latency   | 3.07 seconds |
+| Maximum query latency   | 7.74 seconds |
 
 These figures are the recorded project evaluation results. Latency can
 vary with hardware, network conditions, API response time and whether
