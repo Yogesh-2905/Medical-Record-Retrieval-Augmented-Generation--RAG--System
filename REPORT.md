@@ -205,7 +205,7 @@ vector search.
         1       0.708       0.708       0.611       0.708       0.673
         3       0.917       0.333       0.826       0.792       0.764
         5       1.000       0.250       0.965       0.810       0.827
-    **8**   **1.000**   **0.167**   **1.000**   **0.810**   **0.834**
+      **8       1.000       0.167       1.000       0.810       0.834**
        10       1.000       0.133       1.000       0.810       0.834
        15       1.000       0.089       1.000       0.810       0.834
 
@@ -222,13 +222,13 @@ The reranker experiment compared the retrieval pipeline with reranking
 disabled and enabled, using the selected chunking configuration and
 Top-K setting.
 
-  Metric        Reranker OFF   Reranker ON
-  ----------- -------------- -------------
-  Hit Rate             1.000         1.000
-  Precision            0.167         0.167
-  Recall               1.000         1.000
-  MRR              **0.810**         0.743
-  nDCG             **0.834**         0.783
+  Metric          Reranker OFF       Reranker ON
+  -----------     --------------     -------------
+  Hit Rate             1.000           1.000
+  Precision            0.167           0.167
+  Recall               1.000           1.000
+  MRR                **0.810**         0.743
+  nDCG               **0.834**         0.783
 
 **Selected configuration: reranking OFF.**
 
@@ -243,7 +243,7 @@ runtime configuration.
   Component                    Selected setting
   ---------------------------- --------------------------
   Chunking strategy and size   `recursive_300`
-  Chunk overlap                50
+  Chunk overlap                 50
   Embedding model              `BAAI/bge-small-en-v1.5`
   Embedding dimension          384
   Similarity metric            Cosine similarity
@@ -259,7 +259,7 @@ persistent ChromaDB collection.
 
   -----------------------------------------------------------------------
   Setting                             Value
-  ----------------------------------- -----------------------------------
+  -----------------------------------------------------------------------
   Vector database                     ChromaDB
 
   Persistence location                `data/chroma_db`
