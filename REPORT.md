@@ -163,28 +163,17 @@ Reciprocal Rank (MRR) and normalized Discounted Cumulative Gain (nDCG).
 All nine candidate configurations were evaluated after embedding
 generation.
 
-  ------------------- ------------ ------------ ------------ ------------ ------------
-  Configuration           Hit Rate    Precision       Recall          MRR         nDCG
-  ------------------- ------------ ------------ ------------ ------------ ------------
-  fixed_300                  1.000        0.242        0.951        0.774        0.815
-
-  fixed_600                  0.958        0.250        0.938        0.800        0.793
-
-  fixed_900                  0.917        0.242        0.903        0.819        0.798
-
-  sentence_300               1.000        0.250        0.965        0.772        0.815
-
-  sentence_600               0.917        0.242        0.896        0.833        0.806
-
-  sentence_900               0.917        0.242        0.903        0.819        0.798
-
-  **recursive_300**      **1.000**    **0.250**    **0.965**    **0.810**    **0.827**
-
-  recursive_600              0.917        0.242        0.896        0.875        0.822
-
-  recursive_900              0.917        0.242        0.903        0.819        0.798
-
-
+| Configuration  | Hit Rate | Precision | Recall | MRR   | nDCG  |
+|----------------|----------|-----------|--------|-------|-------|
+| fixed_300      | 1.000    | 0.242     | 0.951  | 0.774 | 0.815 |
+| fixed_600      | 0.958    | 0.250     | 0.938  | 0.800 | 0.793 |
+| fixed_900      | 0.917    | 0.242     | 0.903  | 0.819 | 0.798 |
+| sentence_300   | 1.000    | 0.250     | 0.965  | 0.772 | 0.815 |
+| sentence_600   | 0.917    | 0.242     | 0.896  | 0.833 | 0.806 |
+| sentence_900   | 0.917    | 0.242     | 0.903  | 0.819 | 0.798 |
+| **recursive_300** | **1.000** | **0.250** | **0.965** | **0.810** | **0.827** |
+| recursive_600  | 0.917    | 0.242     | 0.896  | 0.875 | 0.822 |
+| recursive_900  | 0.917    | 0.242     | 0.903  | 0.819 | 0.798 |
 **Selected configuration: `recursive_300`.**
 
 The recursive 300 configuration achieved the highest nDCG (0.827) while
