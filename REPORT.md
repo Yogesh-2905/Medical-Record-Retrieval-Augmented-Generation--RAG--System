@@ -163,7 +163,7 @@ Reciprocal Rank (MRR) and normalized Discounted Cumulative Gain (nDCG).
 All nine candidate configurations were evaluated after embedding
 generation.
 
-  ------------------------------------------------------------------------------------
+  ------------------- ------------ ------------ ------------ ------------ ------------
   Configuration           Hit Rate    Precision       Recall          MRR         nDCG
   ------------------- ------------ ------------ ------------ ------------ ------------
   fixed_300                  1.000        0.242        0.951        0.774        0.815
@@ -183,7 +183,7 @@ generation.
   recursive_600              0.917        0.242        0.896        0.875        0.822
 
   recursive_900              0.917        0.242        0.903        0.819        0.798
-  ------------------------------------------------------------------------------------
+
 
 **Selected configuration: `recursive_300`.**
 
